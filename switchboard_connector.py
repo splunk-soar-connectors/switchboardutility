@@ -279,7 +279,7 @@ class SwitchboardConnector(phantom.BaseConnector):
 
         action_id = self.get_action_identifier()
 
-        self.debug_print("action_id", self.get_action_identifier())
+        self.__print(self.get_action_identifier(), True)
 
         if action_id == 'run_playbooks':
             ret_val = self._handle_run_playbooks(param)
