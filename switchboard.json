@@ -17,6 +17,11 @@
     "main_module": "switchboard_connector.py",
     "min_phantom_version": "4.9.0",
     "app_wizard_version": "1.0.0",
+    "contributors": [
+      {
+        "name": "Mhike"
+      }
+    ],
     "configuration": {
         "https_port": {
             "description": "Splunk SOAR HTTPS port if your instance uses one other than 443",
