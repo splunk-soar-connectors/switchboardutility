@@ -34,7 +34,7 @@ class SwitchboardConnector(phantom.BaseConnector):
         try:
             url = f'{self._get_base_url()}/{endpoint}'
             self.__print(url, True)
-            response = phantom.requests.get(url, verify=False)
+            response = phantom.requests.get(url, verify=False, timeout=30)
             content = json.loads(response.text)
             code = response.status_code
             if 199 < code < 300:
@@ -52,7 +52,7 @@ class SwitchboardConnector(phantom.BaseConnector):
             url = f'{self._get_base_url()}/{endpoint}'
             self.__print(url, True)
             data = json.dumps(dictionary)
-            response = phantom.requests.post(url, data=data, verify=False)
+            response = phantom.requests.post(url, data=data, verify=False, timeout=30)
             content = response.text
             code = response.status_code
             if 199 < code < 300:
@@ -260,7 +260,7 @@ class SwitchboardConnector(phantom.BaseConnector):
         self.__print(f'Attempting http get for {test_url}', False)
         response = None
         try:
-            response = phantom.requests.get(test_url, verify=False)
+            response = phantom.requests.get(test_url, verify=False, timeout=30)
             self.__print(response.status_code, True)
         except:
             pass
