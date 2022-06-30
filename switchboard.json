@@ -67,8 +67,8 @@
             "versions": "EQ(*)"
         },
         {
-            "action": "run playbooks",
-            "identifier": "run_playbooks",
+            "action": "run playbook",
+            "identifier": "run_playbook",
             "description": "Identify and execute matching playbooks",
             "verbose": "Based on the standard naming conventions used by the switchboard app, run all matching playbooks in the playbook cache.",
             "type": "generic",
