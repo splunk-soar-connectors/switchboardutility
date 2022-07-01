@@ -15,7 +15,7 @@
     "utctime_updated": "2022-06-12T03:21:57.836903Z",
     "package_name": "phantom_switchboard",
     "main_module": "switchboard_connector.py",
-    "min_phantom_version": "5.2.0",
+    "min_phantom_version": "4.9.0",
     "app_wizard_version": "1.0.0",
     "contributors": [
         {
@@ -67,8 +67,8 @@
             "versions": "EQ(*)"
         },
         {
-            "action": "run playbook",
-            "identifier": "run_playbook",
+            "action": "run playbooks",
+            "identifier": "run_playbooks",
             "description": "Identify and execute matching playbooks",
             "verbose": "Based on the standard naming conventions used by the switchboard app, run all matching playbooks in the playbook cache.",
             "type": "generic",

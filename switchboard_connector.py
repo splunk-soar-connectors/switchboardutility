@@ -281,7 +281,7 @@ class SwitchboardConnector(phantom.BaseConnector):
 
         self.__print(self.get_action_identifier(), True)
 
-        if action_id == 'run_playbook':
+        if action_id == 'run_playbooks':
             ret_val = self._handle_run_playbooks(param)
 
         if action_id == 'on_poll':
