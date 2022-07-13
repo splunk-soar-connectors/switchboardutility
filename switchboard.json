@@ -1,7 +1,7 @@
 {
     "appid": "24aceaea-6bb2-4888-a3dc-5ef28ccb086a",
     "name": "Switchboard",
-    "description": "The Switchboard app manages various operations used in executing playbooks",
+    "description": "The Switchboard app manages various operations used in executing SOAR playbooks",
     "type": "devops",
     "product_vendor": "Mhike",
     "logo": "switchboard.svg",
@@ -31,7 +31,7 @@
             "id": 0
         },
         "repository_filter": {
-            "description": "A comma seperated list of repositories that shouldn't be added to playbook cache",
+            "description": "A comma separated list of repositories that shouldn't be added to playbook cache",
             "data_type": "string",
             "order": 1,
             "name": "repository_filter",

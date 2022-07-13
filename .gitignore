@@ -1,4 +1,4 @@
-gnore all the extra build and check stuff
+#ignore all the extra build and check stuff
 *.tgz
 *.ini
 *.pyc

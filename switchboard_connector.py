@@ -257,7 +257,7 @@ class SwitchboardConnector(phantom.BaseConnector):
         except:
             self.__print('State file does not contain a playbook cache yet. Turn on polling to cache playbooks', False)
         test_url = f'{self._get_base_url()}/rest/version'
-        self.__print(f'Attempting http get for {test_url}', False)
+        self.__print(f'Attempting HTTP GET for {test_url}', False)
         response = None
         try:
             response = phantom.requests.get(test_url, verify=False, timeout=30)
