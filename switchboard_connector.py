@@ -128,7 +128,7 @@ class SwitchboardConnector(phantom.BaseConnector):
             state['cache'] = cache
             state['timestamp'] = int((datetime.datetime.now() - datetime.datetime(1970, 1, 1)).total_seconds())
             self.save_state(state)
-            self.__print('Finish: _cache_playbooks(): {datetime.datetime.now()}', True)
+            self.__print(f'Finish: _cache_playbooks(): {datetime.datetime.now()}', True)
             return phantom.APP_SUCCESS
         except Exception as e:
             self.__print("Exception thrown", False)
