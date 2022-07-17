@@ -11,7 +11,7 @@
     "product_version_regex": ".*",
     "publisher": "Mhike",
     "license": "Copyright (c) Mhike, 2022",
-    "app_version": "1.0.0",
+    "app_version": "1.0.1",
     "utctime_updated": "2022-06-12T03:21:57.836903Z",
     "package_name": "phantom_switchboard",
     "main_module": "switchboard_connector.py",
