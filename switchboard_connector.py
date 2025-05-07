@@ -83,7 +83,7 @@ class SwitchboardConnector(phantom.BaseConnector):
         self.__print("_get_base_url()", True)
         rest_url = phrules.build_phantom_rest_url()
         scheme, netloc, _, _, _ = urllib.parse.urlsplit(rest_url)
-        return urllib.parse.urlunsplit((scheme, netloc, '', '', ''))
+        return urllib.parse.urlunsplit((scheme, netloc, "", "", ""))
 
     def _get_repository_id(self, scm):
         self.__print(f"Start: _get_repository_id(): {datetime.datetime.now()}", True)

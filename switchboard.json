@@ -145,11 +145,5 @@
             "output": [],
             "versions": "EQ(*)"
         }
-    ],
-    "custom_made": true,
-    "directory": "switchboard_24aceaea-6bb2-4888-a3dc-5ef28ccb086a",
-    "version": 1,
-    "appname": "-",
-    "executable": "spawn3",
-    "disabled": false
+    ]
 }
