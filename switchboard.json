@@ -23,36 +23,29 @@
         }
     ],
     "configuration": {
-        "https_port": {
-            "description": "Splunk SOAR HTTPS port if your instance uses one other than 443",
-            "data_type": "string",
-            "order": 0,
-            "name": "https_port",
-            "id": 0
-        },
         "repository_filter": {
             "description": "A comma separated list of repositories that shouldn't be added to playbook cache",
             "data_type": "string",
-            "order": 1,
+            "order": 0,
             "name": "repository_filter",
-            "id": 1
+            "id": 0
         },
         "cache_expiration": {
             "description": "How long should the playbook cache be valid in seconds",
             "data_type": "numeric",
             "required": true,
             "default": "600",
-            "order": 2,
+            "order": 1,
             "name": "cache_expiration",
-            "id": 2
+            "id": 1
         },
         "debug": {
             "description": "Print debugging statements to log",
             "data_type": "boolean",
             "default": "False",
-            "order": 3,
+            "order": 2,
             "name": "debug",
-            "id": 3
+            "id": 2
         }
     },
     "actions": [
@@ -152,11 +145,5 @@
             "output": [],
             "versions": "EQ(*)"
         }
-    ],
-    "custom_made": true,
-    "directory": "switchboard_24aceaea-6bb2-4888-a3dc-5ef28ccb086a",
-    "version": 1,
-    "appname": "-",
-    "executable": "spawn3",
-    "disabled": false
+    ]
 }
