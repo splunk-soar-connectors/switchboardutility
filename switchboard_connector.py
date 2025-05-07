@@ -13,8 +13,10 @@
 # limitations under the License.
 import datetime
 import json
+import urllib.parse
 
 import phantom.app as phantom
+import phantom.rules as phrules
 from phantom.action_result import ActionResult
 
 
@@ -79,12 +81,9 @@ class SwitchboardConnector(phantom.BaseConnector):
 
     def _get_base_url(self):
         self.__print("_get_base_url()", True)
-        port = 443
-        try:
-            port = self.get_config()["https_port"]
-        except:
-            pass
-        return f"https://127.0.0.1:{port}"
+        rest_url = phrules.build_phantom_rest_url()
+        scheme, netloc, _, _, _ = urllib.parse.urlsplit(rest_url)
+        return urllib.parse.urlunsplit((scheme, netloc, '', '', ''))
 
     def _get_repository_id(self, scm):
         self.__print(f"Start: _get_repository_id(): {datetime.datetime.now()}", True)
