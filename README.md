@@ -14,7 +14,6 @@ This table lists the configuration variables required to operate Switchboard. Th
 
 VARIABLE | REQUIRED | TYPE | DESCRIPTION
 -------- | -------- | ---- | -----------
-**https_port** | optional | string | Splunk SOAR HTTPS port if your instance uses one other than 443 |
 **repository_filter** | optional | string | A comma separated list of repositories that shouldn't be added to playbook cache |
 **cache_expiration** | required | numeric | How long should the playbook cache be valid in seconds |
 **debug** | optional | boolean | Print debugging statements to log |
