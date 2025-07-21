@@ -7,7 +7,7 @@
     "logo": "switchboard.svg",
     "logo_dark": "switchboard_dark.svg",
     "product_name": "Switchboard",
-    "python_version": "3",
+    "python_version": ["3.9", "3.13"],
     "product_version_regex": ".*",
     "publisher": "Mhike",
     "license": "Copyright (c) Mhike, 2022-2025",
