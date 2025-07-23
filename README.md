@@ -1,7 +1,7 @@
 # Switchboard
 
 Publisher: Mhike \
-Connector Version: 1.0.1 \
+Connector Version: 1.0.2 \
 Product Vendor: Mhike \
 Product Name: Switchboard \
 Minimum Product Version: 4.9.0
