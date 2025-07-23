@@ -79,12 +79,7 @@ class SwitchboardConnector(phantom.BaseConnector):
 
     def _get_base_url(self):
         self.__print("_get_base_url()", True)
-        port = 443
-        try:
-            port = self.get_config()["https_port"]
-        except:
-            pass
-        return f"https://127.0.0.1:{port}"
+        return self.get_phantom_base_url()
 
     def _get_repository_id(self, scm):
         self.__print(f"Start: _get_repository_id(): {datetime.datetime.now()}", True)
